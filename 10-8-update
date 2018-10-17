@@ -184,7 +184,7 @@
             header main #header_brand_logo{left:65px !important}
             header main #header_brand_text{left:327px !important}
             .season_sponsor{left:326px !important}
-            .press-text{background-color: #EED6A5; padding: 0px 100px 0 100px; margin-top:25px}
+            .press-text{background-color: #EED6A5; padding: 0px 300px 0 300px; margin-top:25px}
         }
     </style>
     <script type="text/javascript" charset="utf-8" src="https://example.com?ACT=jquery"></script>
