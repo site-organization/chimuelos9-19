@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+    <title>Title</title>
+    <style>
+        body{font-family: 'Titillium Web', sans-serif; background-color: #F0AB00; }
+        aside{display:none}
+        main{width:100%}
+        #contact #content main {width: 100%;}
+        #contact #content{padding: 0 !important;}
+        #social_sub_footer{display:none}
+        #title{display:none;}
+        #push{display: none;}
+        .container{ width:100% !important;}
+        nav .container{width: 1140px !important}
+        footer{margin-top:100px}
+        .press-release p{font-size: 15px; color:#000; line-height: 1.4}
+        .btn-link{color:#fff; }
+        .btn-link:focus, .btn-link:hover{color:#fff;}
+        .btn:focus{outline:0 !important;}
+        .btn-link:hover{color:#FFF; text-decoration:none; background-color: #e60049}
+        .btn-link:active{text-decoration:none;}
+        .btn-link:hover, .btn-link:focus{color:#fff !important; text-decoration: none !important}
+        #readMore:hover{color:#000; text-decoration:none; background-color: #EED6A5;}
+        #readMore{color:#000 !important;}
+        #logo-banner{ max-width:1400px;background-color:#000; padding-left:0px; padding-bottom: 200px; font-family:'lupulus';}
+
+        #header_nav{height:700px}
+        header #tickets_dropdown_menu .right .tickets_dropdown_menu_block{height:250px; width:260px}
+        header #schedule_dropdown_menu .right #schedule_dropdown_menu_games{padding-left:20px}
+        header #team_dropdown_menu .right{padding:0 !important}
+        header #team_dropdown_menu .right .tickets_dropdown_menu_block .inner{padding:5px 15px 50px 15px;}
+        header #team_dropdown_menu .right .tickets_dropdown_menu_block {padding:0 !important;}
+        header #fans_dropdown_menu .right .tickets_dropdown_menu_block .inner{padding: 0px 30px 0 30px!important;}
+        header #community_dropdown_menu .right .tickets_dropdown_menu_block .inner{padding: 0px 5px 5px 5px !important;}
+        header #tickets_dropdown_menu .right .tickets_dropdown_menu_block .inner {padding: 5px 30px 0 30px !important;}
+        header #connect_dropdown_menu .right .tickets_dropdown_menu_block .inner {padding: 5px 30px 50px 30px;}
+        header #community_dropdown_menu .right .tickets_dropdown_menu_block {
+            padding: 0 !important;}
+        #team_dropdown_menu .right .tickets_dropdown_menu_block {
+            padding: 5px 15px 45px 15px !important;}
+        header #team_dropdown_menu .right .tickets_dropdown_menu_block {
+            padding: 5px 15px 50px 15px !important;}
+        header #team_dropdown_menu .right .tickets_dropdown_menu_block {
+            padding: 5px 15px 50px 15px !important;}
+        #team_dropdown_menu .right .tickets_dropdown_menu_block {
+            padding: 5px 15px 50px 15px !important;}
+        footer #footer_main{height:290px !important}
+        .buyNav{list-style-type: none;
+            margin-top:100px;
+            padding: 0;}
+        /*.buyButtons {display: inline; color:#EED6A5; font-size:24px; width:60px; text-decoration: none; font-weight: bold; background-color: #377D22; padding: 10px 30px 10px 30px;; margin: 67px; border:solid darkgreen 2px}*/
+        .nopadding{margin:0 !important; padding: 0 !important}
+        .purple{text-align: center; background-color: #6639B7;}
+        ul{margin-bottom: 0 !important}
+        p{color:#000}
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen AND (min-width:320px){
+            #banner_container{width:100%}
+            #jerseyimg{}
+            .card-header{background-color: #A50034; width:340px; margin: 10px;
+                border-radius: 5px;
+                height: 70px; font-family: 'Montserrat', sans-serif;}
+            .card-body{background-color: #fff; width:340px; height:200px; margin: 0 auto; border-radius: 5px; font-family: 'Montserrat', sans-serif; padding:10px}
+            #chimueloLogo{margin-top: 20px}
+            .little-links{display: inline; color:#fff; font-weight: bold}
+            .little-links a{display: inline-block;width:200px; color:#fff; font-size:24px;  text-decoration: underline;  font-family: 'Montserrat', sans-serif;font-style: normal;font-weight: 200;}
+            .buyButtons{margin-top:35px}
+            .buyButtons a{ color:#fff;   text-decoration: none; background-color: #377D22; padding: 15px 40px 15px 40px; border:solid darkgreen 2px; font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 200; font-size:20px}
+            .pinkbar{text-align: center;background-color:#e60049; height:160px;}
+            .purplebar{text-align: center;background-color:#6639B7; height:160px;}
+            #chimueloLogo{margin-right:0; margin-bottom: 30px;}
+            #flipGIf{margin-left:0px}
+            #chimueloBanner{}
+            .press-text{background-color: #EED6A5; padding: 0px 50px 0 50px; margin-top:25px}
+            .fixed-background{text-align: center; background-color: #A50034; margin-left:-21px; margin-right:-25px; ;position: relative; background-attachment: initial; background-position: center; background-repeat: no-repeat; background-size: 100%;height:247px;}
+            header .dropdown_menu{max-height: 400px}
+        }
+        /*///////////////////////////////////////////////////////////*/
+        @media screen and (min-width:480px){
+            #banner_container{width:100%}
+            #jerseyimg{}
+            .card-header{background-color: #A50034; width:550px; margin: 10px;
+                border-radius: 5px;
+                height: 70px;font-family: 'Montserrat', sans-serif;}
+            .card-body{background-color: #fff; width:550px; height: 170px; margin: 0 auto; border-radius: 5px;font-family: 'Montserrat', sans-serif;}
+            #chimueloLogo{margin-top:50px; margin-bottom: 30px}
+            #chimueloBanner{}
+            .buyButtons{display: inline;}
+            .buyButtons a{display: inline; color:#fff; font-size:20px;  text-decoration: none; background-color: #377D22; padding: 15px 40px 15px 40px;  border:solid darkgreen 2px; font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 200;}
+            #chimueloLogo{margin-right:0; }
+            #flipGIf{margin-left:0px}
+            .pinkbar{text-align: center;background-color:#e60049; height:75px}
+            .purplebar{text-align: center;background-color:#6639B7; height:75px}
+            .little-links a{display: inline-block; width:210px; color:#fff; font-size:20px; text-decoration: none;  font-family: 'Montserrat', sans-serif;font-style: normal;font-weight: 200;}
+            .press-text{background-color: #EED6A5; padding: 0px 50px 0 50px; margin-top:25px}
+            .pretend-nav{list-style-type: none;
+                padding-top: 25px; text-align: center}
+            .fixed-background{background-attachment: fixed; background-size: cover;height:1000px;}
+        }
+        @media screen and (min-width:768px){
+            #banner_container{width:100%}
+            #jerseyimg{}
+            .card-header{background-color: #A50034; width:550px; margin: 10px;
+                border-radius: 5px;
+                height: 70px; font-family: 'Montserrat', sans-serif;}
+            .card-body{background-color: #fff; width:550px; height: 160px; margin: 0 auto; border-radius: 5px; font-family: 'Montserrat', sans-serif;}
+            #chimueloLogo{margin-top:52px}
+            #chimueloBanner{height: 600px}
+            .buyNav{margin-top:145px;}
+            .buyButtons{display: inline;}
+            .buyButtons a{display: inline; color:#fff; font-size:20px;  text-decoration: none; background-color: #377D22; padding: 15px 40px 15px 40px; border:solid darkgreen 2px; font-family: 'Montserrat', sans-serif;;;
+                font-style: normal;
+                font-weight: 200;}
+            .little-links{display: inline; color:#fff; font-weight: bold}
+            .little-links a{display: inline-block;width:210px; color:#fff; font-size:20px;  text-decoration: none;  font-family: 'Montserrat', sans-serif;;font-style: normal;font-weight: 200;}
+            .pinkbar{text-align: center;background-color:#e60049; height:75px}
+            .purplebar{text-align: center;background-color:#6639B7; height:75px}
+            #chimueloLogo{margin-right:0;margin-bottom: 0px;}
+            #flipGIf{margin-left:0px}
+            .press-text{background-color: #EED6A5; padding: 0px 100px 0 100px; margin-top:25px}
+            .pretend-nav{list-style-type: none;
+                padding-top: 25px; text-align: center}
+        }
+        /*/////////////////////////////////////////////////////////////*/
+        @media screen and (min-width:992px){
+            #banner_container{width:100%}
+            #jerseyimg{}
+            .card-header{background-color: #A50034; width:550px; margin: 10px;
+                border-radius: 5px;
+                height: 70px; font-family: 'Montserrat', sans-serif;}
+            .card-body{background-color: #fff; width:550px; height: 160px; margin: 0 auto; border-radius: 5px; font-family: 'Montserrat', sans-serif;}
+            #chimueloLogo{margin-top:52px}
+            #chimueloBanner{height: 600px}
+            .buyNav{margin-top:145px;}
+            .buyButtons{display: inline;}
+            .buyButtons a{display: inline; color:#fff; font-size:25px;  text-decoration: none; background-color: #377D22; padding: 15px 40px 15px 40px; border:solid darkgreen 2px; font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 200;}
+            .little-links{display: inline; color:#fff; font-weight: bold}
+            .little-links a{display: inline-block; width:210px; color:#fff; font-size:20px; text-decoration: none;  font-family: 'Montserrat', sans-serif;;font-style: normal;font-weight: 200;}
+            .pinkbar{text-align: center;background-color:#e60049; height:75px}
+            .purplebar{text-align: center;background-color:#6639B7; height:75px}
+            #chimueloLogo{margin-right:120px; margin-bottom: 0px;}
+            #flipGIf{margin-left:120px}
+            .pretend-nav{list-style-type: none;padding-top: 25px; text-align: center}
+            .press-text{background-color: #EED6A5; padding: 0px 100px 0 100px; margin-top:25px}
+        }
+        /*/////////////////////////////////////////////////////////*/
+        @media screen and (min-width:1200px){
+            #banner_container{width:100%}
+            #jerseyimg{}
+            .card-header{background-color: #A50034; width:550px; margin: 10px;
+                border-radius: 5px;
+                height: 70px; font-family: 'Montserrat', sans-serif;}
+            .card-body{background-color: #fff; width:550px; height: 160px; margin: 0 auto; border-radius: 5px; font-family: 'Montserrat', sans-serif;}
+            #chimueloLogo{margin-top:52px}
+            #chimueloBanner{height: 600px}
+            .buyButtons{display: inline;}
+            .buyButtons a{display: inline; color:#fff; font-size:25px; width:60px; text-decoration: none; background-color: #377D22; padding: 15px 40px 15px 40px; margin: 67px; border:solid darkgreen 2px; font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 200;}
+            .little-links{display: inline; color:#fff; font-weight: bold}
+            .little-links a{display: inline-block; width:210px; color:#fff; font-size:20px; text-decoration: none;  font-family: 'Montserrat', sans-serif;font-style: normal;font-weight: 200;}
+            .pinkbar{text-align: center;background-color:#e60049; height:75px}
+            .purplebar{text-align: center;background-color:#6639B7; height:75px}
+            #chimueloLogo{margin-right:120px;margin-bottom: 0px;}
+            #flipGIf{margin-left:120px}
+            .pretend-nav{list-style-type: none;
+                padding-top: 25px; text-align: center}
+            .buyNav{margin-top:145px;}
+            header main #header_brand_logo{left:65px !important}
+            header main #header_brand_text{left:327px !important}
+            .season_sponsor{left:326px !important}
+            .press-text{background-color: #EED6A5; margin-top:25px}
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8" src="https://example.com?ACT=jquery"></script>
+</head>
+<body>
+
+
+
+<div id="" class="row"style="background-image: url(https://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/img/rampage/Wallpaper_1375x550px.png);-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; margin-left:-21px; margin-right:-25px" >
+
+
+
+
+    <!--/*&lt;!&ndash;Section with the GIF&ndash;&gt;*/-->
+    <div id="chimueloBanner" class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nopadding" style="text-align: center;">
+
+            <img id="flipGIf" src="https://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/img/rampage/chimuelosgif3.gif" width="55%" style="">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nopadding" style="text-align: center; ">
+
+            <img id="chimueloLogo" src="http://www.sarampage.com/images/uploads/chimueloslogo_v3.png" width="80%" style="">
+
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center; margin-bottom: 50px">
+            <ul class="buyNav">
+                <li class="buyButtons " ><a href="https://www.ticketmaster.com/promo/2r9822" target="_blank">Buy Tickets</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="row purple" style="margin-left:-21px; margin-right:-25px">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <ul class="pretend-nav purplebar" style="margin-bottom: 0 !important;">
+            <li class="little-links"><a href="http://www.spursfanshop.com/Catalog/Rampage/chimuelos" target="_blank">Shop Merchandise</a></li>
+            <li class="little-links"><a href="https://www.ticketmaster.com/promo/2r9822" target="_blank">Collectables</a></li>
+            <li class="little-links"><a href="https://oss.ticketmaster.com/aps/rampage/EN/link/buy/details/18rma04" target="_blank">Mini Plans</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="row pinkbar" style="margin-left:-21px; margin-right:-25px">
+    <ul class=" col-lg-12 col-md-12 col-sm-12 pretend-nav pinkbar">
+        <li class="little-links"><a href="#Press-Release">Game Info</a></li>
+        <li class="little-links"><a href="#Jersey">Jersey</a></li>
+        <li class="little-links"><a href="#Infographic">Infographic</a></li>
+        <li class="little-links"><a href="#More-Info">More Info</a></li>
+
+    </ul>
+</div>
+
+<div class="row" width="" style="text-align: center;background-color:#EED6A5;margin-left:-21px; margin-right:-25px; ">
+
+    <a name="Press-Release"></a>
+    <img id="pressImg" src="http://www.sarampage.com/images/uploads/GameInfo-Banner.png"  width="100%" style="padding-bottom:40px; " >
+    <div class="col-lg-12 col-md-12 col-sm-12 press-release" width="" style="text-align: center; ">
+
+        <!--//////////////////////PLACEHOLDER FOR BANNER///////////////////////////////-->
+        <div class="press-text" style="">
+
+            <p><h2><ul>
+            <p><h2>Friday, November 23rd vs. Texas Stars at 7:30PM</h2></p>
+            <p><h2>Friday, December 28th vs. Ontario Reign at 7:30PM</h2></p>
+            <p><h2>Friday, January 25th vs. San Diego Gulls at 7:30PM</h2></p>
+            <p><h2>Friday, March 29th vs. Manitoba Moose at 7:30PM</h2></p>
+            </ul>
+            </h2>
+            </p>
+            <br>
+
+
+            <p><img src="http://www.sarampage.com/images/uploads/Chimuelos_Giveaway_1200x628.png">
+            </p>
+            <br>
+            <br>
+            <div class="">
+                <div id="readMore"class="btn btn-link collapsed" data-toggle="collapse"data-target="#collapseText" aria-expanded="true" aria-controls="collapseOne">
+                    <h3 class="mb-0">
+                        Learn More
+                    </h3>
+                </div>
+                <div id="collapseText" class="collapse" data-parent="">
+                    <div class="">
+
+                        <p><h3>
+                        The Chimuelos game series will offer limited-edition Chimuelos-themed collectables including a koozie (Nov. 23), a color-changing cup (Dec. 28), a bottle opener (Jan. 25), and a travel cooler (March 29). Fans can add the commemorative collectibles for each game to any ticket for an additional $5, while supplies last.
+                    </h3>
+                        </p>
+                        <br>
+                        <br>
+                        <p><h3>The Rampage will also offer a 4-game Chimuelos Series Mini Plan that includes all four dates and a limited Chimuelos replica long-sleeve jersey for just $125.
+                    </h3>
+                        </p>
+
+                        <br>
+                        <br>
+                        <p><h3>Festivities will start prior to puck drop and feature a photo opportunity with a Chimuelos step-and-repeat and $1 domestic beers and sodas, as part of Bud Light Dollar Drink Nights.
+                    </h3>
+                        </p>
+                        <br>
+                        <br>
+
+                        <br>
+                        <br>
+
+                        <br>
+                        <br>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <img src="http://www.sarampage.com/images/uploads/AboutOurLogo-Purple.jpg" width="100%" >
+    <div class="col-lg-12 col-md-12 col-sm-12"><a name="Infographic"></a>
+
+        <img src="https://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/img/rampage/Chimuelos_Infographic.png" width="80%" style="">
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="http://www.sarampage.com/images/made/images/uploads/1841/20181026-chimuelos-rampage-adriangarcia-sse_aa91325_845_565_c1.jpg" alt="" width="600" height="400">
+            </a>
+
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="http://www.sarampage.com/images/made/images/uploads/1841/20181026-chimuelos-rampage-adriangarcia-sse_aa91635_845_565_c1.jpg" alt="" width="600" height="400">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+
+            <img src="http://www.sarampage.com/images/made/images/uploads/1841/20181026-chimuelos-rampage-adriangarcia-sse_cr36009_845_565_c1.jpg" alt="" width="600" height="400">
+            </a>
+
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+
+            <img src="http://www.sarampage.com/images/made/images/uploads/1841/20181026-chimuelos-rampage-adriangarcia-sse_cr36104_845_565_c1.jpg" alt="" width="600" height="400">
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row fixed-background" width=70% style="background-image: url(http://www.nba.com/.element/media/2.0/teamsites/spurs/Rosalie/img/rampage/Chimuelos_JerseyDesign_1186x748.png)"><a name="Jersey"></a>
+
+</div>
+<div class="row" style="text-align: center;">
+
+    <div class= id="accordion" style="margin:0 auto">
+        <a name="More-Info"></a>
+        <div class="card">
+            <div class="card-header btn btn-link collapsed" data-toggle="collapse"data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3 class="mb-0">
+                    More Info
+                </h3>
+
+            </div>
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Doors Open: 6:30pm</p>
+                    <p>Puck Drops: 7:30pm</p>
+
+                    <p>
+                        Collectibles available while supplies last!
+                    </p>
+                    <p>Purchase 4-game mini plan & save!</p>
+                    <p>For questions call 210-444-5554.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header btn btn-link collapsed" data-toggle="collapse"data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                <h3 class="mb-0">
+                    FAQs
+                </h3>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <p style="font-style: italic">What does “Chimuelos” mean?</p>
+                    <p> A person who is missing teeth</p>
+
+                    <p style="font-style: italic">
+                        Why Chimuelos for the name? </p>
+
+                    <p>
+                        Hockey players customarily loose teeth because of the game so we’re quite literally the “Chimuelos de San Antonio”
+                    </p>
+
+                    <p style="font-style: italic">
+                        What is the significance of the logo? <a href="#Infographic">See here</a></div>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header btn btn-link collapsed" data-toggle="collapse"data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                <h3 class="mb-0">
+                    AT&T Center
+                </h3>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    For any questions regarding AT&T Center, please <a href="http://www.attcenter.com/arena/arena-faqs-policies" target="_blank">click here</a>.
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+</body>
+</html>
